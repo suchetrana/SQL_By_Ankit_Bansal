@@ -21,6 +21,24 @@ alter table a_orders
 insert into a_orders(order_id, order_date, product_name, total_price, payment_method, discount)
 values (1, '2025-10-25 02:54:10', 'Macbook', 543033.22, 'UPI', 20);
 
+insert into a_orders(order_id, order_date, product_name, total_price, payment_method, discount)
+values (2, '2025-10-25 02:54:10', 'Vision', 543033.22, 'UPI', 20);
+
+insert into a_orders(order_id, order_date, product_name, total_price, payment_method, discount)
+values (3, '2025-10-25 02:54:10', 'Watch', 543033.22, 'UPI', 20);
+
 select *
 from a_orders;
 
+# delete with filter condition
+
+delete from a_orders where order_id = 3;
+
+# DML statement , update row
+
+update a_orders
+set discount = 10;  # make all discount column value 10
+
+# specific row
+update a_orders
+set product_name = 'Orange' where order_id = 2;
