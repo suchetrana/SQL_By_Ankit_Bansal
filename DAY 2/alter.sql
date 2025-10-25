@@ -1,5 +1,5 @@
 create database DAY2;
-USE DAY2;
+USE day1_homework;
 
 create table amazon_orders
 (
@@ -35,5 +35,5 @@ values (5, '2025-9-15 12-05-59', 'Watch', '47000', 'cash');
 
 
 select *
-from amazon_orders;
+from users;
 
