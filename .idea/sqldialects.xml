@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/DAY 1/Homewok.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/DAY 1/Introduction.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/DAY 2/alter.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/DAY 2/constraints.sql" dialect="MySQL" />
+  </component>
+</project>
