@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourcePerFileMappings">
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/fffb998d-82e3-4cdb-9358-d52db8d6e888/console.sql" value="fffb998d-82e3-4cdb-9358-d52db8d6e888" />
     <file url="file://$PROJECT_DIR$/DAY 1/Homewok.sql" value="9542818d-2dc7-4ec3-9afd-70195d65e51e" />
     <file url="file://$PROJECT_DIR$/DAY 1/Introduction.sql" value="9542818d-2dc7-4ec3-9afd-70195d65e51e" />
     <file url="file://$PROJECT_DIR$/DAY 2/alter.sql" value="9542818d-2dc7-4ec3-9afd-70195d65e51e" />
     <file url="file://$PROJECT_DIR$/DAY 2/constraints.sql" value="9542818d-2dc7-4ec3-9afd-70195d65e51e" />
+    <file url="file://$PROJECT_DIR$/DAY 3/select.sql" value="9542818d-2dc7-4ec3-9afd-70195d65e51e" />
+    <file url="file://$PROJECT_DIR$/DAY 4/select_filter.sql" value="9542818d-2dc7-4ec3-9afd-70195d65e51e" />
+    <file url="file://$USER_HOME$/Downloads/dummy_orders.sql" value="9542818d-2dc7-4ec3-9afd-70195d65e51e" />
   </component>
 </project>
