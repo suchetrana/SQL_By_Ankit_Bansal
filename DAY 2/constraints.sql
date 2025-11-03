@@ -42,3 +42,5 @@ set discount = 10;  # make all discount column value 10
 # specific row
 update a_orders
 set product_name = 'Orange' where order_id = 2;
+
+
