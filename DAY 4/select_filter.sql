@@ -16,3 +16,7 @@ CREATE TABLE orders
     state         VARCHAR(100),
     postal_code   VARCHAR(10)
 );
+
+update orders
+set city = null
+where city like 'B%' limit 2;
