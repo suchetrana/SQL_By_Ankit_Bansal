@@ -19,4 +19,55 @@ CREATE TABLE orders
 
 update orders
 set city = null
-where city like 'B%' limit 2;
+where city like 'B%'
+limit 2;
+
+select *
+from orders;
+
+# Aggregation in sql ->  count(), max(), min(), sum(), avg() and etc.
+
+select count(*) as cnt, max(postal_code) as max
+from orders;
+
+select *
+from orders order by order_date desc limit 5;
+
+# group by
+
+select country, count(*) as cnt
+from orders
+group by country;
+
+# When you use an aggregate function (like MIN(), MAX(), SUM(), COUNT(), AVG(), etc.) alongside non-aggregated columns,
+# every non-aggregated column in your SELECT must appear in your GROUP BY.
+
+# Wrong eg:
+select  city
+from orders
+group by country, city;
+
+# correct eg
+select country, city, sum(order_id) as sum_orders
+from orders
+where city like 'H%'
+group by country, city
+order by sum_orders desc
+limit 3;
+
+# order of execution
+#  from -> where -> group by -> select -> order by -> limit
+# FROM → WHERE → GROUP → HAVING → SELECT → ORDER → LIMIT
+
+
+select country, city, sum(order_id) as sum_orders
+from orders
+where city like 'H%'
+group by country, city
+having sum(order_id)
+order by sum_orders desc;
+
+# where vs having
+# where -> used with  column
+# having -> used with aggregate fn's
+
