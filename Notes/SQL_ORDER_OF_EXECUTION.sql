@@ -1,3 +1,10 @@
+select country, city, sum(order_id) as sum_orders
+from orders
+where city like 'H%'
+group by country, city
+order by sum_orders desc
+limit 3;
+
 | Step  | Clause                | What it does                                           | Example action in your query                                     |
 | ----- | --------------------- | ------------------------------------------------------ | ---------------------------------------------------------------- |
 | **1** | **FROM**              | Identify source tables and perform joins               | Starts with the `orders` table                                   |
