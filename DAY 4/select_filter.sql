@@ -31,7 +31,9 @@ select count(*) as cnt, max(postal_code) as max
 from orders;
 
 select *
-from orders order by order_date desc limit 5;
+from orders
+order by order_date desc
+limit 5;
 
 # group by
 
@@ -43,7 +45,7 @@ group by country;
 # every non-aggregated column in your SELECT must appear in your GROUP BY.
 
 # Wrong eg:
-select  city
+select city
 from orders
 group by country, city;
 
@@ -68,6 +70,21 @@ having sum(order_id)
 order by sum_orders desc;
 
 # where vs having
-# where -> used with  column
-# having -> used with aggregate fn's
+# where -> use for particular row
+# having -> used with aggregate fn's or group of values
+
+select count(distinct city) as cnt_city, count(1) as cnt_1
+from orders;
+
+# any aggregate  fn ignore "null" values
+/*
+region, sales
+"east",  100
+"east",  null
+"east",  200
+*/
+
+# select region, avg(sales) as avg_sales
+# from orders group by region;
+#  o/p 150
 
