@@ -31,3 +31,6 @@ CREATE TABLE returns
     return_reason VARCHAR(255),
     processed_at  TIMESTAMP   DEFAULT CURRENT_TIMESTAMP
 );
+
+select  od.order_date as order_date, re.return_date as return_date
+from orders as od inner join returns as re;
