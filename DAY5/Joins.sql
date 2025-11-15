@@ -33,4 +33,5 @@ CREATE TABLE returns
 );
 
 select  od.order_date as order_date, re.return_date as return_date
-from orders as od inner join returns as re;
+from orders as od inner join returns as re on od.order_id = re.order_id;
+
