@@ -33,7 +33,7 @@ alter table orders
     add column quanity integer;
 
 update orders
-set quanity = 5;
+set quanity = 5; # it set quantity column = 5 in every row
 
 select order_id
 from orders
