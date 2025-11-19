@@ -75,3 +75,10 @@ where re.return_date is null;
 # from orders as od
 #           full outer join returns re on od.produc_id = re.product_id;
 
+SELECT od.order_id, re.order_id
+FROM orders od
+         LEFT JOIN returns re ON od.order_id = re.order_id
+UNION
+SELECT od.order_id, re.order_id
+FROM orders od
+         RIGHT JOIN returns re ON od.order_id = re.order_id;
